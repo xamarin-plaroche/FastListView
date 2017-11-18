@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FLVDemo.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="BlueColor">#0f1e5a</Color>
+            <Color x:Key="LightBlueColor">#66ddff</Color>
+            <Color x:Key="RedColor">#cc0000</Color>
+            <Color x:Key="LightGreyColor">#eeeeee</Color>
+            <Color x:Key="GreyColor">#8e8d8d</Color>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
