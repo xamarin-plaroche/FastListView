@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using FLVDemo.Extensions;
 using FLVDemo.Models;
 using FLVDemo.ViewModels.ViewCells;
@@ -19,8 +20,8 @@ namespace FLVDemo.ViewModels
 	{
 		INavigation _nav;
 
-		ObservableCollection<BaseCellViewModel> _innovations;
-		public ObservableCollection<BaseCellViewModel> Innovations
+		IList<BaseCellViewModel> _innovations;
+		public IList<BaseCellViewModel> Innovations
 		{
 			get
 			{
@@ -47,6 +48,8 @@ namespace FLVDemo.ViewModels
 
 		public ReactiveCommand RefreshCommand { get; private set; }
 		public ReactiveCommand<string, ObservableCollection<BaseCellViewModel>> LoadMoreCommand { get; private set; }
+
+		public ICommand SelectedCommand { get; set; }
 
 		public InovationsPageViewModel(INavigation nav)
 		{
@@ -99,6 +102,20 @@ namespace FLVDemo.ViewModels
 						Innovations = feeds;
 					}
 				});
+
+			SelectedCommand = new Command((obj) => {
+
+				var vm = (BaseCellViewModel)obj;
+
+				if (vm is InovationViewModel) {
+					var inovationVM = (InovationViewModel)vm;
+					if (!string.IsNullOrEmpty(inovationVM.Record.Fields.SiteInternet)) {
+						Device.OpenUri(new Uri(inovationVM.Record.Fields.SiteInternet));
+					}
+				}
+
+				Debug.WriteLine("Selected!");
+			});
 
 		}
 

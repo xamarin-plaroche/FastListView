@@ -10,11 +10,7 @@
                 BackgroundColor="White" ScrollEnabled="true"
                 SeparatorVisibility="Default" SeparatorColor="#0f1e5a" 
                 IsPullToRefreshEnabled="true" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}" 
-                LoadMoreCommand="{Binding LoadMoreCommand}" />
-<!--            <flv:FastListView SelectedItem="{Binding SelectedItem}" HasUnevenRows="true" VerticalOptions="FillAndExpand"
-                ItemsSource="{Binding Innovations}" SeparatorVisibility="Default" ScrollEnabled="true" SelectedCommand="{Binding SelectedCommand}"
-                IsPullToRefreshEnabled="true" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}"
-                LoadMoreCommand="{Binding LoadMoreCommand}" BackgroundColor="Red" SeparatorColor="Red" />
--->        </StackLayout>
+                LoadMoreCommand="{Binding LoadMoreCommand}" SelectedCommand="{Binding SelectedCommand}" />
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
