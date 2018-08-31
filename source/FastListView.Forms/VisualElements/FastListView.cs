@@ -137,9 +137,9 @@ namespace FastListView.Forms.VisualElements
 
 		public FastViewCell CreateDefault(object item)
 		{
-			if (item is IFastListViewCell)
+			if (item is IFastViewCell)
 			{
-				var viewCell = (IFastListViewCell)item;
+				var viewCell = (IFastViewCell)item;
 				var template = viewCell.ItemTemplate;
 				if (template != null)
 				{

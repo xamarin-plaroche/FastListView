@@ -16,6 +16,14 @@ namespace FastListView.Renderers
 		{
 		}
 
+		public static new void Init()
+		{
+			// needed because of this STUPID linker issue: https://bugzilla.xamarin.com/show_bug.cgi?id=31076
+#pragma warning disable 0219
+			var ignore = typeof(FastListViewRenderer);
+#pragma warning restore 0219
+		}
+
 		protected override void OnElementChanged(ElementChangedEventArgs<Forms.VisualElements.FastListView> e)
 		{
 			base.OnElementChanged(e);

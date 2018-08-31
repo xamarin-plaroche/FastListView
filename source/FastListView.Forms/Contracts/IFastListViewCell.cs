@@ -2,7 +2,7 @@
 
 namespace FastListView.Forms.Contracts
 {
-	public interface IFastListViewCell
+	public interface IFastViewCell
 	{
 		DataTemplate ItemTemplate { get; set; }
 	}
