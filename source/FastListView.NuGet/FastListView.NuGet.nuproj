@@ -34,14 +34,17 @@
     <ProjectReference Include="..\FastListView.Android\FastListView.Android.csproj">
       <Project>{9FC4F897-5ECC-4A23-AFAF-2EDF19CA8358}</Project>
       <Name>FastListView.Android</Name>
+      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\FastListView.iOS\FastListView.iOS.csproj">
       <Project>{448610BF-6FA6-4FD5-A45C-04742A2E6EFD}</Project>
       <Name>FastListView.iOS</Name>
+      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\FastListView.Forms\FastListView.Forms.csproj">
       <Project>{D27D14EA-1453-49B4-AC94-1EC22199C3CD}</Project>
       <Name>FastListView.Forms</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
