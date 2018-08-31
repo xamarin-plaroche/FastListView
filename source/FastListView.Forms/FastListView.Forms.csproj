@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Xamarin.Forms.3.1.0.697729\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.3.1.0.697729\build\netstandard1.0\Xamarin.Forms.props')" />
-  <Import Project="..\..\..\..\..\EDECISION\PROJETS\DENTSPLY\Sources\Dentsply.Tablet.MyDSGuide\packages\Xamarin.Forms.3.1.0.583944\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\..\..\..\..\EDECISION\PROJETS\DENTSPLY\Sources\Dentsply.Tablet.MyDSGuide\packages\Xamarin.Forms.3.1.0.583944\build\netstandard1.0\Xamarin.Forms.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -60,6 +59,5 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\NuGet.Build.Packaging.0.2.1\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.1\build\NuGet.Build.Packaging.targets')" />
   <Import Project="..\packages\Xamarin.Forms.2.4.0.38779\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.38779\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />
-  <Import Project="..\..\..\..\..\EDECISION\PROJETS\DENTSPLY\Sources\Dentsply.Tablet.MyDSGuide\packages\Xamarin.Forms.3.1.0.583944\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\..\..\..\..\EDECISION\PROJETS\DENTSPLY\Sources\Dentsply.Tablet.MyDSGuide\packages\Xamarin.Forms.3.1.0.583944\build\netstandard1.0\Xamarin.Forms.targets')" />
   <Import Project="..\packages\Xamarin.Forms.3.1.0.697729\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.1.0.697729\build\netstandard1.0\Xamarin.Forms.targets')" />
  </Project>
