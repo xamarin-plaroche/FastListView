@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<flv:FastViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FastListViewDemo.Views.ViewCells.LoadingViewCell" xmlns:flv="clr-namespace:FastListView.Forms.VisualElements;assembly=FastListView.Forms">
+    <StackLayout BackgroundColor="White" HeightRequest="85" HorizontalOptions="Fill">
+        <ActivityIndicator Color="{StaticResource BlueColor}" IsRunning="true" IsVisible="true" WidthRequest="22" HeightRequest="22" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+</flv:FastViewCell>

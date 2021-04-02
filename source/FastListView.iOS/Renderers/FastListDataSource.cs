@@ -13,14 +13,22 @@ namespace FastListView.Renderers
 
 		public FastListDataSource(Forms.VisualElements.FastListView fastListView)
 		{
-			this._fastListView = fastListView;
+			_fastListView = fastListView;
 		}
 
 		#region implemented abstract members of UICollectionViewDataSource
 
 		public override nint GetItemsCount(UICollectionView collectionView, nint section)
 		{
-			return ((ICollection)this._fastListView.ItemsSource).Count;
+			if (_fastListView?.ItemsSource != null)
+            {
+				return ((ICollection)_fastListView.ItemsSource).Count;
+
+			}
+			else
+            {
+				return 0;
+            }
 		}
 
 		public override nint NumberOfSections(UICollectionView collectionView)
@@ -36,14 +44,14 @@ namespace FastListView.Renderers
 
 		public override UICollectionViewCell GetCell(UICollectionView collectionView, NSIndexPath indexPath)
 		{
-			var item = this._fastListView.ItemsSource.Cast<object>().ElementAt(indexPath.Row);
+			var item = _fastListView.ItemsSource.Cast<object>().ElementAt(indexPath.Row);
 
-			var _viewCell = this._fastListView.CreateDefault(item);
+			var _viewCell = _fastListView.CreateDefault(item);
 
 			if (_viewCell != null)
 			{
 				_viewCell.BindingContext = item;
-				_viewCell.Parent = this._fastListView;
+				_viewCell.Parent = _fastListView;
 
 				if (indexPath != null)
 				{

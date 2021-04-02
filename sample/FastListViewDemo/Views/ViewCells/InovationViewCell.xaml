@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<flv:FastViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FastListViewDemo.Views.ViewCells.InovationViewCell" xmlns:flv="clr-namespace:FastListView.Forms.VisualElements;assembly=FastListView.Forms">
+    <StackLayout Spacing="0">
+        <StackLayout BackgroundColor="White" Padding="20,20,20,20" Spacing="20">
+            <Label Text="{Binding TitleText}" TextColor="{StaticResource BlueColor}" HorizontalTextAlignment="Start" FontSize="13" HorizontalOptions="Start" />
+            <BoxView Color="{StaticResource BlueColor}" WidthRequest="50" HeightRequest="1" HorizontalOptions="Start" VerticalOptions="Start" />
+            <Label Text="{Binding DetailText}" TextColor="{StaticResource BlueColor}" HorizontalTextAlignment="Start" LineBreakMode="WordWrap" FontSize="30" HorizontalOptions="Start" />
+            <Image Source="layout_plus_bleu.png" WidthRequest="32" HeightRequest="28" HorizontalOptions="Start" />
+        </StackLayout>
+    </StackLayout>
+</flv:FastViewCell>

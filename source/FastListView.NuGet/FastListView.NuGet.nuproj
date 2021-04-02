@@ -7,7 +7,7 @@
     <ProjectGuid>{848F00F1-A214-43FB-AD21-C3C041531F4A}</ProjectGuid>
     <Description>FastListView</Description>
     <PackageId>FastListView</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.1.1</PackageVersion>
     <Authors>Paulin Laroche</Authors>
     <DevelopmentDependency>false</DevelopmentDependency>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -19,6 +19,9 @@
     <ReleaseVersion>1.0</ReleaseVersion>
     <Title>FastListView</Title>
     <PackageProjectUrl>https://github.com/xamarin-plaroche/FastListView</PackageProjectUrl>
+    <Owners>Paulin Laroche</Owners>
+    <PackageLicenseFile>license.txt</PackageLicenseFile>
+    <PackageLicenseUrl>https://aka.ms/deprecateLicenseUrl</PackageLicenseUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,9 +45,8 @@
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\FastListView.Forms\FastListView.Forms.csproj">
-      <Project>{D27D14EA-1453-49B4-AC94-1EC22199C3CD}</Project>
+      <Project>{13CD01B0-C66B-4DE9-BA10-267DE3DD03F1}</Project>
       <Name>FastListView.Forms</Name>
-      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +54,13 @@
       <Version>0.2.2</Version>
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="license\license.txt" Pack="true" PackagePath="" />
+    <None Include="images\icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
   <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />

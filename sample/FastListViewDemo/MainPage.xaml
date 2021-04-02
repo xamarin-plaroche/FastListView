@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FastListViewDemo.MainPage">
+
+    <StackLayout>
+        <Button HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="200" Text="Load List" BackgroundColor="{StaticResource BlueColor}" TextColor="White" FontAttributes="Bold" BorderRadius="0" Command="{Binding LoadCommand}" />
+    </StackLayout>
+
+</ContentPage>
